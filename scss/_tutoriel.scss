@@ -44,8 +44,8 @@
 		}
 
 		&::before {
-			counter-increment: compteListe1;
-			content: counter(compteListe) " ";
+			counter-increment: compteListe 1;
+			content: counter(compteListe);
 			background: $color-primary;
 			height: 1.5rem;
 			width: 1.5rem;

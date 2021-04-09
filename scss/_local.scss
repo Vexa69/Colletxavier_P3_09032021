@@ -31,5 +31,10 @@
 
 	&__btn {
 		@include button(primary);
+		background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+
+		&:hover {
+			mix-blend-mode: lighten;
+		}
 	}
 }

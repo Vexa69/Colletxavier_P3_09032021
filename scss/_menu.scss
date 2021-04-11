@@ -36,14 +36,13 @@
 	padding: 1rem;
 	margin: 1rem 0;
 	display: flex;
-	box-shadow: 0.25rem 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0);
+	box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	animation: itemAppear 0.8s;
-	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation: itemAppear 0.5s;
+	animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 	animation-fill-mode: both;
 	max-width: 100%;
 	cursor: pointer;
-	//transform: scale(0);
 
 	&__header {
 		white-space: nowrap;
@@ -53,6 +52,13 @@
 	}
 
 	&__title {
+		margin: 0;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	&__description {
 		margin: 0;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -69,27 +75,27 @@
 
 	&__confirmation {
 		background-color: $color-tertiary;
-		margin: -1rem -5rem -1rem -1rem;
+		margin: -1rem -5rem -1rem 1rem;
 		width: 4rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition-duration: 0.8s;
+		transition-duration: 0.6s;
 	}
 
 	&:hover &__confirmation {
 		margin-right: -1rem;
 	}
 	&__wrapIcon {
-		height: 1.8rem;
-		width: 1.8rem;
+		height: 1.6rem;
+		width: 1.6rem;
 		background-color: white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		border-radius: 100px;
 		transform: rotate(180deg);
-		transition-duration: 0.8s;
+		transition-duration: 0.6s;
 	}
 
 	&:hover &__wrapIcon {
@@ -99,4 +105,16 @@
 	&__icon {
 		color: $color-tertiary;
 	}
+}
+
+.wrapBtn {
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	padding: 3rem 0;
+}
+
+.commandBtn {
+	@include button(primary);
+	cursor: pointer;
 }

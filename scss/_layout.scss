@@ -17,7 +17,7 @@ html {
 	font-size: 1.1rem;
 	border-radius: 100px;
 	color: white;
-	background: rgb(147, 86, 220);
+	background: #686868;
 	background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
 	cursor: pointer;
 	transition-duration: 0.25s;
@@ -26,6 +26,7 @@ html {
 	&:hover {
 		background-color: white;
 		box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+		background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
 	}
 
 	a {

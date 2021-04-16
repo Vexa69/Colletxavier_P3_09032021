@@ -94,16 +94,23 @@
 		align-items: center;
 		justify-content: center;
 		border-radius: 100px;
-		transform: rotate(180deg);
+		transform: rotate(90deg);
 		transition-duration: 0.6s;
 	}
 
 	&:hover &__wrapIcon {
-		transform: rotate(0);
+		transform: rotate(360deg);
+		animation-fill-mode: none;
 	}
 
 	&__icon {
 		color: $color-tertiary;
+	}
+}
+
+@for $i from 0 to 9 {
+	.delay-#{$i} {
+		animation-delay: #{$i/10}s;
 	}
 }
 

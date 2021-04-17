@@ -96,6 +96,7 @@
 		border-radius: 100px;
 		transform: rotate(90deg);
 		transition-duration: 0.6s;
+		animation-play-state: paused;
 	}
 
 	&:hover &__wrapIcon {
